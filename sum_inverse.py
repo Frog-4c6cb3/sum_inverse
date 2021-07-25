@@ -26,7 +26,7 @@ for i in range(ran):
         _result.append(_sum)
         dict = {"num": _j, "result": _result}
         df = pd.DataFrame(dict)
-        df.to_csv("result.csv")
+        df.to_csv("result.csv", index=False)
     j = i+1
     if(judge_1(j) == 0):
         num = 1/j
